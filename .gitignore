@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 .env
+
+#document
+scss.document.md
+
 # testing
 /coverage
 
