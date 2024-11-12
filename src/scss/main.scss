@@ -1,0 +1,6 @@
+// Customize Bootstrap variables before importing Bootstrap
+$primary: #fcb702;   // Example: Override Bootstrap's primary color
+$secondary: #005ae0; // Example: Override Bootstrap's secondary color
+
+// Import Bootstrap's SCSS files after customizing variables
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
