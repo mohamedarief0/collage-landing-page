@@ -1,0 +1,27 @@
+.brand-color {
+  background-color: var(--primary-gold-500);
+}
+/* Navbar.css */
+.navbar .nav-link.active {
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  /* font-weight: bold; */
+}
+
+/* Navbar.css animation */
+.navbar {
+  transition: transform 380ms ease-out;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+.navbar.visible {
+  transform: translateY(0);
+}

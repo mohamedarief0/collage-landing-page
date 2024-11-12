@@ -1,0 +1,138 @@
+.quotes-container {
+  width: 600px;
+  text-align: center;
+  height: 550px; /* Adjusted for additional author text */
+  overflow: hidden;
+}
+
+.quote {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease, transform 1s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 800px;
+  transform: translate(-50%, -50%) scale(0.8);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.quote.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Styles for the author text */
+.author {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  position: absolute;
+  bottom: -20px; /* Adjust to position closer to the bottom */
+  right: 10px; /* Align to the bottom-right of the quote */
+  text-align: right;
+  margin-top: 12px;
+}
+
+.animated-quotes {
+  position: absolute;
+  top: 30%; /* Adjust based on how far above you want it */
+  /* width: 100%; */
+  left: 30%;
+  text-align: center;
+  z-index: 2; /* Ensures it is above the pillar image */
+}
+
+@media (max-width: 2560px) {
+  .animated-quotes {
+    position: absolute;
+    top: 30%; /* Adjust based on how far above you want it */
+    /* width: 100%; */
+    left: 30%;
+    text-align: center;
+    z-index: 2; /* Ensures it is above the pillar image */
+  }
+  .quotes-container {
+    width: 600px;
+  }
+  .quote {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .animated-quotes {
+    position: absolute;
+    top: 28%; /* Adjust based on how far above you want it */
+    /* width: 100%; */
+    left: 38%;
+    text-align: center;
+    z-index: 2; /* Ensures it is above the pillar image */
+  }
+  .quotes-container {
+    width: 600px;
+  }
+  .quote {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .animated-quotes {
+    position: absolute;
+    top: 17%; /* Adjust based on how far above you want it */
+    /* width: 100%; */
+    left: 25%;
+    text-align: center;
+    z-index: 2; /* Ensures it is above the pillar image */
+  }
+  .quotes-container {
+    width: 500px;
+  }
+  .quote {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .animated-quotes {
+    position: absolute;
+    top: 10%; /* Adjust based on how far above you want it */
+    /* width: 100%; */
+    left: 23%;
+    text-align: center;
+    z-index: 2; /* Ensures it is above the pillar image */
+  }
+  .quotes-container {
+    width: 400px;
+  }
+  .quote {
+    font-size: 12px;
+  }
+  .author {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .animated-quotes {
+    position: absolute;
+    top: -16%; /* Adjust based on how far above you want it */
+    /* width: 100%; */
+    left: 14%;
+    text-align: center;
+    z-index: 2; /* Ensures it is above the pillar image */
+  }
+  .quotes-container {
+    width: 300px;
+  }
+  .quote {
+    font-size: 8px;
+  }
+  .author {
+    font-size: 8px;
+  }
+}
